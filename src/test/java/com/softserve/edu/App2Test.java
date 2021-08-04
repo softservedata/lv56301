@@ -2,7 +2,7 @@ package com.softserve.edu;
 
 import org.junit.Test;
 
-public class AppTest {
+public class App2Test {
 
     @Test
     public void checkCreateFromRowInvalidRow() {
