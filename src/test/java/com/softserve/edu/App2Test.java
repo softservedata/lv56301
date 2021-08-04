@@ -9,5 +9,6 @@ public class App2Test {
         // Code
         // TODO
         System.out.println("done test");
+        System.out.println("done test");
     }
 }
