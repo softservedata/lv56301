@@ -25,9 +25,11 @@ hs_err_pid*
 ##################
 # NEW IGNORE FILES
 
+# Credentials
+# user.properties
+
 # Config Files
 *.ini
-.DS_Store
 
 # Binary Files
 *.dat
@@ -41,7 +43,6 @@ hs_err_pid*
 /.settings/
 /.metadata/
 /.recommenders/
-/.allure/
 /target/
 /bin/
 /build/
@@ -55,17 +56,12 @@ hs_err_pid*
 /reports/
 /.idea/
 /out/
-/shelf/
-/resources/static/
-/resources/front/
-workspace.xml
 *.iml
 *.ucls
 
 # Multi Modules Project
 /**/.externalToolBuilders/
 /**/.settings/
-/**/.allure/
 /**/target/
 /**/doc/
 /**/bin/
@@ -81,18 +77,17 @@ workspace.xml
 /**/af.reporting
 /**/.idea/
 /**/out/
-/**/shelf/
-/**/workspace.xml
 /**/*.iml
 /**/*.ucls
 
 # Ignore binary
+/.allure/
 *.bin
 *.exe
 *.xpi
 
 # Ignore log
-*.log
+# *.log
 *.log.[1234567890]
 
 # Ignore IntelliJ IDEA Config Files
