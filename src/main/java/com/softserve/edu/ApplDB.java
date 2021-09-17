@@ -14,7 +14,7 @@ public class ApplDB {
 
 	public static void main(String[] args) throws SQLException {
 		System.out.println("Start...");
-		DriverManager.registerDriver(new com.mysql.jdbc.Driver());
+		//DriverManager.registerDriver(new com.mysql.jdbc.Driver());
 		con = DriverManager.getConnection(URL, username, password);
 		if (con != null) {
 			System.out.println("Connection Successful! \n");
@@ -23,6 +23,7 @@ public class ApplDB {
 			System.exit(1);
 		}
 		Statement st = con.createStatement();
+		System.out.println("con.getAutoCommit() = " + con.getAutoCommit());
 		/*-
 		st.execute("CREATE DATABASE lv61301;");
 		st.execute("use lv61301");
@@ -37,9 +38,9 @@ public class ApplDB {
 		st.execute(query);
 		*/
 		//
-		String query = "INSERT INTO temp (name,login,password,age) VALUES ('Ivan','iva','qwerty',21);";
+		//String query = "INSERT INTO temp (name,login,password,age) VALUES ('Ivan','iva','qwerty',21);";
 		//String query = "INSERT INTO temp (name,login,password,age) VALUES ('Petro2','pet','123456',22);";
-		st.execute(query);
+		//st.execute(query);
 		//
 		//st.execute("UPDATE temp SET name='Taras' WHERE login LIKE 'iv%';");
 		//st.execute("DELETE FROM temp WHERE password='qwerty';");
