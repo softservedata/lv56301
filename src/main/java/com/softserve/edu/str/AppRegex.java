@@ -42,9 +42,12 @@ public class AppRegex {
 	    //
 	    //String pattern ="(\\d{1,3}\\.){3}\\d{1,3}";
 	    //String text ="text 192.168.1.1 text";
-	    String pattern ="\\b[1,2]\\d{2}\\b|\\b[1-9]\\d{1}\\b";
-	    String text ="32 321 192 168 255 260";
+	    //String pattern ="\\b[1,2]\\d{2}\\b|\\b[1-9]\\d{1}\\b";
+	    //String text ="32 321 192 168 255 260";
 		//
+	    String pattern ="\\d+(\\.+\\d+)+";
+        String text ="first 192.168.103.141, second 192.168.103.142, 192.168.103.143";
+	    //
 		Pattern p = Pattern.compile(pattern);
 		Matcher m = p.matcher(text);
 		//
